@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDataBrgController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="3.0" prefHeight="403.0" prefWidth="681.0">
+         <children>
+            <Label layoutX="26.0" layoutY="27.0" text="Data Barang">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbvbrg" layoutX="26.0" layoutY="67.0" prefHeight="200.0" prefWidth="598.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="C1" />
+                  <TableColumn prefWidth="75.0" text="C2" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnawal" layoutX="34.0" layoutY="294.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="25.0" prefWidth="60.0" text="awal" />
+            <Button fx:id="btnsebelum" layoutX="171.0" layoutY="294.0" mnemonicParsing="false" onAction="#sebelumklik" text="sebelum" />
+            <Button fx:id="btnsesudah" layoutX="298.0" layoutY="294.0" mnemonicParsing="false" onAction="#sesudahklik" text="sesudah" />
+            <Button fx:id="btnakhir" layoutX="442.0" layoutY="294.0" mnemonicParsing="false" onAction="#akhirklik" text="akhir" />
+            <Button fx:id="btntambah" layoutX="36.0" layoutY="339.0" mnemonicParsing="false" onAction="#tambahklik" text="tambah" />
+            <Button fx:id="bthapus" layoutX="173.0" layoutY="339.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="57.0" text="hapus" />
+            <Button fx:id="btnubah" layoutX="300.0" layoutY="339.0" mnemonicParsing="false" onAction="#ubahklik" prefHeight="25.0" prefWidth="61.0" text="ubah" />
+            <Button fx:id="btnkeluar" layoutX="439.0" layoutY="339.0" mnemonicParsing="false" onAction="#keluarklik" text="keluar" />
+            <Label layoutX="586.0" layoutY="19.0" text="Label" />
+            <TextField fx:id="searchbrg" layoutX="512.0" layoutY="36.0" onKeyReleased="#cariData" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
